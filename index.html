@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body-icon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section class="comp-slider">
+      <div class="comp-slider-wrapper">
+        <div class="comp_title_wrapper">
+          <div class="comp_title_text_wrapper">
+            <p class="comp_title">success stories</p>
+          </div>
+        </div>
+        <div class="comp-slide_deco-line"></div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper_slide_wrapper">
+                <div class="swiper_slide_content_wrapper">
+                  <div class="swiper_slide_text">
+                    <p class="swiper_slide_text_part">
+                      "Absolutely thrilled with the results! Deciding to prioritize my health and
+                      fitness, I embarked on a new diet and consistent workout routine.
+                    </p>
+                    <p class="swiper_slide_text_part">
+                      It was a real challenge, but perseverance paid off: down 10 kg in 3 months!
+                      The newfound energy, improved well-being - it all became possible thanks to
+                      this path to health.
+                    </p>
+                    <p class="swiper_slide_text_part">
+                      Highly recommend to anyone looking to make positive changes!"
+                    </p>
+                    <div class="swiper_slide_name">Emily Brown</div>
+                  </div>
+                </div>
+                <div class="comp_wrapper">
+                  <div id="one" class="bal-container">
+                    <div class="bal-after">
+                      <img src="img/aft1.jpg" />
+                      <div class="bal-afterPosition afterLabel">After</div>
+                    </div>
+                    <div class="bal-before">
+                      <div class="bal-before-inset">
+                        <img src="img/bef1.jpg" />
+                        <div class="bal-beforePosition beforeLabel">Before</div>
+                      </div>
+                    </div>
+                    <div class="bal-handle">
+                      <span class="handle-left-arrow"></span>
+                      <span class="handle-right-arrow"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_slide_wrapper">
+                <div class="swiper_slide_content_wrapper">
+                  <div class="swiper_slide_text">
+                    <p class="swiper_slide_text_part">
+                      "Absolutely thrilled with the results! Deciding to prioritize my health and
+                      fitness, I embarked on a new diet and consistent workout routine.
+                    </p>
+                    <p class="swiper_slide_text_part">
+                      It was a real challenge, but perseverance paid off: down 10 kg in 3 months!
+                      The newfound energy, improved well-being - it all became possible thanks to
+                      this path to health.
+                    </p>
+                    <p class="swiper_slide_text_part">
+                      Highly recommend to anyone looking to make positive changes!"
+                    </p>
+                    <div class="swiper_slide_name">Bill Gates</div>
+                  </div>
+                </div>
+                <div class="comp_wrapper">
+                  <div id="two" class="bal-container">
+                    <div class="bal-after">
+                      <img src="img/aft2.jpg" />
+                      <div class="bal-afterPosition afterLabel">After</div>
+                    </div>
+                    <div class="bal-before">
+                      <div class="bal-before-inset">
+                        <img src="img/bef2.jpg" />
+                        <div class="bal-beforePosition beforeLabel">Before</div>
+                      </div>
+                    </div>
+                    <div class="bal-handle">
+                      <span class="handle-left-arrow"></span>
+                      <span class="handle-right-arrow"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_slide_wrapper">
+                <div class="swiper_slide_content_wrapper">
+                  <div class="swiper_slide_text">
+                    <p class="swiper_slide_text_part">
+                      "Absolutely thrilled with the results! Deciding to prioritize my health and
+                      fitness, I embarked on a new diet and consistent workout routine.
+                    </p>
+                    <p class="swiper_slide_text_part">
+                      It was a real challenge, but perseverance paid off: down 10 kg in 3 months!
+                      The newfound energy, improved well-being - it all became possible thanks to
+                      this path to health.
+                    </p>
+                    <p class="swiper_slide_text_part">
+                      Highly recommend to anyone looking to make positive changes!"
+                    </p>
+                    <div class="swiper_slide_name">Nikola Tesla</div>
+                  </div>
+                </div>
+                <div class="comp_wrapper">
+                  <div id="three" class="bal-container">
+                    <div class="bal-after">
+                      <img src="img/aft3.jpg" />
+                      <div class="bal-afterPosition afterLabel">After</div>
+                    </div>
+                    <div class="bal-before">
+                      <div class="bal-before-inset">
+                        <img src="img/bef4.jpg" class="trans_it" />
+                        <div class="bal-beforePosition beforeLabel">Before</div>
+                      </div>
+                    </div>
+                    <div class="bal-handle">
+                      <span class="handle-left-arrow"></span>
+                      <span class="handle-right-arrow"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow-pagi_wrapper">
+          <img src="img/button-prev.png" alt="" class="button-prev" />
+          <div class="swiper-pagination"></div>
+          <img src="img/button-next.png" alt="" class="button-next" />
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        effect: 'fade',
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        allowTouchMove: false,
+        loop: true,
+      });
+
+      let compDecoLine = document.querySelector('.comp-slide_deco-line');
+      compDecoLine.classList.add('comp_show_deco_line');
+
+      let titleText = document.querySelector('.comp_title_text_wrapper');
+      titleText.classList.add('comp_title_appear');
+
+      class BeforeAfter {
+        constructor(enteryObject) {
+          const beforeAfterContainer = document.querySelector(enteryObject.id);
+          const before = beforeAfterContainer.querySelector('.bal-before');
+          const beforeText = beforeAfterContainer.querySelector('.bal-beforePosition');
+          const afterText = beforeAfterContainer.querySelector('.bal-afterPosition');
+          const handle = beforeAfterContainer.querySelector('.bal-handle');
+          var widthChange = 0;
+
+          beforeAfterContainer
+            .querySelector('.bal-before-inset')
+            .setAttribute('style', 'width: ' + beforeAfterContainer.offsetWidth + 'px;');
+          window.onresize = function () {
+            beforeAfterContainer
+              .querySelector('.bal-before-inset')
+              .setAttribute('style', 'width: ' + beforeAfterContainer.offsetWidth + 'px;');
+          };
+          before.setAttribute('style', 'width: 50%;');
+          handle.setAttribute('style', 'left: 50%;');
+
+          //touch screen event listener
+          beforeAfterContainer.addEventListener('touchstart', (e) => {
+            beforeAfterContainer.addEventListener('touchmove', (e2) => {
+              let containerWidth = beforeAfterContainer.offsetWidth;
+              let currentPoint = e2.changedTouches[0].clientX;
+
+              let startOfDiv = beforeAfterContainer.offsetLeft;
+
+              let modifiedCurrentPoint = currentPoint - startOfDiv;
+
+              if (
+                modifiedCurrentPoint > 10 &&
+                modifiedCurrentPoint < beforeAfterContainer.offsetWidth - 10
+              ) {
+                let newWidth = (modifiedCurrentPoint * 100) / containerWidth;
+
+                before.setAttribute('style', 'width:' + newWidth + '%;');
+                afterText.setAttribute('style', 'z-index: 1;');
+                handle.setAttribute('style', 'left:' + newWidth + '%;');
+              }
+            });
+          });
+
+          //mouse move event listener
+          beforeAfterContainer.addEventListener('mousemove', (e) => {
+            let containerWidth = beforeAfterContainer.offsetWidth;
+            widthChange = e.offsetX;
+            let newWidth = (widthChange * 100) / containerWidth;
+
+            if (e.offsetX > 10 && e.offsetX < beforeAfterContainer.offsetWidth - 10) {
+              before.setAttribute('style', 'width:' + newWidth + '%;');
+              afterText.setAttribute('style', 'z-index:' + '1;');
+              handle.setAttribute('style', 'left:' + newWidth + '%;');
+            }
+          });
+        }
+      }
+    </script>
+    <script>
+      new BeforeAfter({
+        id: '#one',
+      });
+      new BeforeAfter({
+        id: '#two',
+      });
+      new BeforeAfter({
+        id: '#three',
+      });
+    </script>
+  </body>
+  <script></script>
+</html>
+<style></style>
